@@ -1,4 +1,8 @@
-[![Build Status](https://travis-ci.org/wycats/handlebars.js.png?branch=master)](https://travis-ci.org/wycats/handlebars.js)
+Emberized Handlebars. https://npmjs.org/package/ember-handlebars
+
+This fork fills the void of precompiling support for Emberized Handlebars in Node. It glues together tweaked versions of Ember's Handlebars patch, the main script, the bin script, and the package file.
+
+---
 
 Handlebars.js
 =============
@@ -250,14 +254,14 @@ Handlebars allows templates to be precompiled and included as javascript
 code rather than the handlebars template allowing for faster startup time.
 
 ### Installation
-The precompiler script may be installed via npm using the `npm install -g handlebars`
+The precompiler script may be installed via npm using the `npm install -g ember-handlebars`
 command.
 
 ### Usage
 
 <pre>
 Precompile handlebar templates.
-Usage: handlebars template...
+Usage: ember-handlebars template...
 
 Options:
   -a, --amd        Create an AMD format function (allows loading with RequireJS)         [boolean]
