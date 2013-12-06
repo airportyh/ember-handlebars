@@ -1,19 +1,13 @@
 {
-  "name": "handlebars",
-  "barename": "handlebars",
-  "version": "1.1.2",
-  "description": "Handlebars provides the power necessary to let you build semantic templates effectively with no frustration",
-  "homepage": "http://www.handlebarsjs.com/",
-  "keywords": [
-    "handlebars",
-    "mustache",
-    "template",
-    "html"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wycats/handlebars.js.git"
-  },
+  "name": "ember-handlebars",
+  "barename": "ember-handlebars",
+  "version": "1.2.0",
+  "description": "Emberized Handlebars.",
+  "keywords": ["ember", "handlebars"],
+  "homepage": "https://github.com/joinspoton/ember-handlebars",
+  "bugs": "https://github.com/joinspoton/ember-handlebars/issues",
+  "repository": "git://github.com/joinspoton/ember-handlebars",
+  "bin": "./bin/handlebars",
   "author": "Yehuda Katz",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -49,9 +43,6 @@
     "underscore": "~1.5.1"
   },
   "main": "lib/index.js",
-  "bin": {
-    "handlebars": "bin/handlebars"
-  },
   "scripts": {
     "test": "grunt"
   }

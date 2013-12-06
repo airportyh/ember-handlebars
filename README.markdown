@@ -1,5 +1,11 @@
-[![Build Status](https://travis-ci.org/wycats/handlebars.js.png?branch=master)](https://travis-ci.org/wycats/handlebars.js)
+Emberized Handlebars. https://npmjs.org/package/ember-handlebars
 
+This fork fills the void of precompiling support for Emberized Handlebars in Node. It glues together tweaked versions of Ember's Handlebars patch, the main script, the bin script, and the package file.
+
+    $ npm install -g ember-handlebars
+    $ ember-handlebars ...
+
+---
 
 Handlebars.js
 =============

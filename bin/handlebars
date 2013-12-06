@@ -43,7 +43,9 @@ var optimist = require('optimist')
         'type': 'string',
         'description': 'Template namespace',
         'alias': 'namespace',
-        'default': 'Handlebars.templates'
+        // ember-handlebars >
+        'default': 'Ember.TEMPLATES'
+        // ember-handlebars <
       },
       's': {
         'type': 'boolean',
@@ -133,7 +135,9 @@ if (!argv.simple) {
   } else {
     output.push('(function() {\n');
   }
-  output.push('  var template = Handlebars.template, templates = ');
+  // ember-handlebars >
+  output.push('  var template = Ember.Handlebars.template, templates = ');
+  // ember-handlebars <
   output.push(argv.namespace);
   output.push(' = ');
   output.push(argv.namespace);
@@ -150,7 +154,7 @@ function processTemplate(template, root) {
         processTemplate(path, root || template);
       }
     });
-  } else if (extension.test(path)) {
+  } else {
     var data = fs.readFileSync(path, 'utf8');
 
     if (argv.bom && data.indexOf('\uFEFF') === 0) {
